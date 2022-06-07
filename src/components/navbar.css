@@ -1,0 +1,17 @@
+
+h2{
+    color: blueviolet;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    color: aqua;
+    list-style: none;
+    justify-content: flex-start;
+}
