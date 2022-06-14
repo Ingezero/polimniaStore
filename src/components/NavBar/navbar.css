@@ -16,3 +16,25 @@ li {
     justify-content: flex-start;
 }
 
+.itemSetup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    border: 15px;
+}
+
+.boxSize{
+    width: 35px;
+}
+
+.butSubSize{
+    width: 85px;
+}
+
+.itemCounter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}

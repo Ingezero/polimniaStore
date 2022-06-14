@@ -1,8 +1,13 @@
+import ItemCount from "./ItemCount/ItemCount";
+
 /* import "./itemListContainer.css"
  */
 export default function ItemListContainer(props) {
     console.log(props);
     return (
-        <li>{props.greetings}</li>
+        <div className="itemSetup">
+            <li>{props.greetings}</li>
+            <ItemCount stock={5} initial={1}/>
+        </div>
     )
 }
