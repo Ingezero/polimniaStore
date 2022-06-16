@@ -1,3 +1,4 @@
+import React from "react"
 import cartIcon from "./img/cart.png"
 
 export default function CartWidget() {

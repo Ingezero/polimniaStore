@@ -1,6 +1,7 @@
 import NavLink from "../NavLink/NavLink";
 import CartWidget from "../NavBar/CartWidget";
 import "./navbar.css"
+import React from "react";
 
 function NavBar() {
 
