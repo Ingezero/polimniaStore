@@ -1,3 +1,13 @@
+.navStyling{
+    width: 100%;
+    height: 150px;
+
+}
+
+.linkStyling{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+}
 
 h2{
     color: blueviolet;
@@ -21,8 +31,12 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1200px;
-    border: 15px;
+    height: 100%;
+}
+
+.headerStyles{
+    font-size: 25px;
+    color: brown;
 }
 
 .boxSize{

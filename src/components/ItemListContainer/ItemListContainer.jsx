@@ -27,8 +27,8 @@ export default function ItemListContainer(props) {
 
     return (
         <div className="itemSetup">
-            <li>{props.greetings}</li>
-            <ItemCount stock={5} initial={1} />
+            <li className="headerStyles">{props.greetings}</li>
+            {/* <ItemCount stock={5} initial={1} /> */}
             <ItemList productos={products} />
         </div>
     )

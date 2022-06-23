@@ -1,19 +1,21 @@
 import React, {useState, useEffect} from "react";
 import { polimniaProducts } from "../mock/products";
 import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
 
 /* import "./itemListContainer.css"
  */
 export default function ItemDetailContainer(props) {
     
-    const [products, setProducts] = useState([])
-
+    const [products, setProducts] = useState([]);
+    const prodId = useParams().prodId;
+    
     useEffect(()=>{
         const bringProducts = new Promise((res, rej)=>{
             setTimeout(()=>{
-                res(polimniaProducts[0]);
-            }, 2000)
+                res(polimniaProducts[prodId]);
+            }, 2000);
         });
         
         bringProducts
@@ -22,9 +24,10 @@ export default function ItemDetailContainer(props) {
         })
     }, []);
 
+    
     return (
         <div className="itemSetup">
-            <li>{props.greetings}</li>
+            <li className="headerStyles">{props.greetings}</li>
             <ItemDetail detalles={products} />
         </div>
     )

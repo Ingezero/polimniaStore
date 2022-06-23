@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Item({items}) {
+export default function Item({ items }) {
     return (
         <div>
             <div>
@@ -10,7 +11,11 @@ export default function Item({items}) {
                 <div>
                     <h2>{items.name}</h2>
                     <span>{items.description}</span>
-                    <br/><br/><br/>
+                    <br />
+                    <Link to={`/detalle/${items.id-1}`}>
+                        <button>Ver Detalle</button>
+                    </Link>
+                    <br /><br /><br />
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount from '../ItemListContainer/ItemCount'
 
 export default function ItemDetail({ detalles }) {
     return (
@@ -7,6 +8,7 @@ export default function ItemDetail({ detalles }) {
             <h2>{detalles.name}</h2>
             <span>{detalles.description}</span><br />
             <span>$ {detalles.price}</span>
+            <ItemCount stock={detalles.stock} initial={1} />
         </div>
     )
 }

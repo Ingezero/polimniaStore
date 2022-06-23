@@ -5,7 +5,7 @@ export const polimniaProducts = [
         description: "Detalles para pasteles",
         stock: 5,
         price: 250,
-        img: "./img/pastel.png",
+        img: "../img/pastel.png",
     },
     {
         id: "2",
@@ -13,7 +13,7 @@ export const polimniaProducts = [
         description: "Detalles para postre",
         stock: 10,
         price: 350,
-        img: "./img/postre.png",
+        img: "../img/postre.png",
     },
     {
         id: "3",
@@ -21,5 +21,5 @@ export const polimniaProducts = [
         description: "Detalles para galleta",
         stock: 15,
         price: 450,
-        img: "./img/galleta.png",
+        img: "../img/galleta.png",
     }]
