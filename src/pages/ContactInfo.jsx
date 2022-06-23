@@ -4,7 +4,7 @@ function ContactInfo() {
   return (
     <div>
       <h2>ContactInfo</h2>
-      <p className="headerStyles">ingezero1@gmail.com</p>
+      <a href='/' className="headerStyles">ingezero1@gmail.com</a>
     </div>
   )
 }

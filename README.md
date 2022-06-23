@@ -1,3 +1,44 @@
+Proyecto Luis Castro
+
+Actualmente la version de la pagina cuenta con items que seran reemplazados por los productos finales. La navegacion ya esta implementada incluso con el itemCount desde el apartado item que se deja ver en ItemDetailContainer. La navegacion asi mismo esta relacionada con los ID para los detalles y se agrego un link mas basico de contacto. 
+
+Este proyecto es un ecommerce de una reposteria.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
