@@ -8,6 +8,8 @@ export default function ItemDetailContainer(props) {
 
     const [products, setProducts] = useState([]);
     const prodId = useParams().prodId;
+    
+
 
     useEffect(() => {
         const bringProducts = new Promise((res, rej) => {
@@ -25,7 +27,7 @@ export default function ItemDetailContainer(props) {
                 setProducts(res);
             })
     }, [prodId]);
-
+ 
 
     return (
         <div className="itemSetup">
