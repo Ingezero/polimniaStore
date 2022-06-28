@@ -4,8 +4,6 @@ import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 
 
-/* import "./itemListContainer.css"
- */
 export default function ItemDetailContainer(props) {
 
     const [products, setProducts] = useState([]);
@@ -16,7 +14,7 @@ export default function ItemDetailContainer(props) {
             setTimeout(() => {
                 let idNum = parseInt(prodId);
                 const itemFound = polimniaProducts.find(prods => {
-                    return prods.id === idNum;
+                    return prods.id == idNum;
                 })
                 res(itemFound)
             }, 1000);

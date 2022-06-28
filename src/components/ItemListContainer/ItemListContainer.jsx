@@ -19,7 +19,7 @@ export default function ItemListContainer(props) {
                     })
                     res(itemsFound)
                 }
-            }, 200)
+            }, 1000)
         });
 
         bringProducts

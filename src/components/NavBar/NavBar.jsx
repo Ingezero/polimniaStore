@@ -1,4 +1,3 @@
-/* import NavLink from "../NavLink/NavLink"; */
 import CartWidget from "./CartWidget";
 import "./navbar.css"
 import React from "react";
