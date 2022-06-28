@@ -1,55 +1,113 @@
-.navStyling{
-    width: 100%;
-    height: 150px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,700&display=swap');
 
-}
-
-.linkStyling{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: green;
-}
-
-h2{
-    color: blueviolet;
-    text-align: center;
-
-}
 
 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
 }
 
-li {
-    color: aqua;
+.linkStyling{
+    text-decoration: none;
+    color: red;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+a:hover{
+    color: white;
+}
+
+ li {
+    color: red;
     list-style: none;
-    justify-content: flex-start;
+    
 }
 
-.itemSetup{
+.navStyling {
+    width: 80%;
+    height: 150px;
+    background-color: #1f7281;
+    font-family: 'Cormorant Garamond', serif;    font-size: 25px;
     display: flex;
     flex-direction: column;
+}
+
+.logoSize{
+    height: 180px;
+    width: 180px;
+    align-self: center;
+}
+
+.itemSetup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     height: 100%;
+    padding: 150px;   
 }
 
-.headerStyles{
-    font-size: 25px;
+.distriProds{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+    width: 100%;
+}
+
+.headerStyles {
+    font-size: 35px;
     color: brown;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
 }
 
-.boxSize{
+.boxSize {
     width: 35px;
 }
 
-.butSubSize{
+.butSubSize {
     width: 85px;
 }
 
-.itemCounter{
+.itemCounter {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+}
+
+.placeholderText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.countColor {
+    color: black;
+}
+
+.tamCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.textFormato{
+    color: blue;
+    font-size: 25px;
 }

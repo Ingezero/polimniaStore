@@ -1,8 +1,8 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import NavBar from './components/navBar/NavBar.jsx';
+import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import React from 'react';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ContactInfo from './pages/ContactInfo';
 
@@ -18,6 +18,9 @@ function App() {
               <Route path="/" element={<ItemListContainer greetings="Catalogo de productos disponibles" />} />
             </Routes>
             <Routes>
+              <Route path="/categoria/:catId" element={<ItemListContainer greetings="Catalogo de productos disponibles" />} />
+            </Routes>
+            <Routes>
               <Route path="/detalle/:prodId" element={<ItemDetailContainer greetings="Detalles de producto" />} />
             </Routes>
             <Routes>
@@ -25,9 +28,7 @@ function App() {
             </Routes>
           </div>
         </BrowserRouter>
-        <p>
-          Luis Castro
-        </p>
+
       </header>
     </div>
   );

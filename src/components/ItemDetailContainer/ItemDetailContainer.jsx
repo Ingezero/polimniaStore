@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { polimniaProducts } from "../mock/products";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
@@ -7,24 +7,28 @@ import { useParams } from "react-router-dom";
 /* import "./itemListContainer.css"
  */
 export default function ItemDetailContainer(props) {
-    
+
     const [products, setProducts] = useState([]);
     const prodId = useParams().prodId;
-    
-    useEffect(()=>{
-        const bringProducts = new Promise((res, rej)=>{
-            setTimeout(()=>{
-                res(polimniaProducts[prodId]);
-            }, 2000);
-        });
-        
-        bringProducts
-        .then((res)=>{
-            setProducts(res);
-        })
-    }, []);
 
-    
+    useEffect(() => {
+        const bringProducts = new Promise((res, rej) => {
+            setTimeout(() => {
+                let idNum = parseInt(prodId);
+                const itemFound = polimniaProducts.find(prods => {
+                    return prods.id === idNum;
+                })
+                res(itemFound)
+            }, 1000);
+        });
+
+        bringProducts
+            .then((res) => {
+                setProducts(res);
+            })
+    }, [prodId]);
+
+
     return (
         <div className="itemSetup">
             <li className="headerStyles">{props.greetings}</li>

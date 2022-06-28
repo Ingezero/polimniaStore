@@ -1,21 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default function Item({ items }) {
     return (
-        <div>
-            <div>
-                <div>
-                    <img src={items.img} alt={items.name} />
-                </div>
-                <div>
-                    <h2>{items.name}</h2>
-                    <span>{items.description}</span>
+        <div className='contenedorCards'>
+            <div className="card tamCards" style={{width: "18rem"}}>
+                <img src={items.img} alt={items.name} />
+                <div className="card-body">
+                    <h2 className='textFormato'>{items.name}</h2>
+                    <span >{items.description}</span>
                     <br />
-                    <Link to={`/detalle/${items.id-1}`}>
-                        <button>Ver Detalle</button>
+                    <br />
+                    <Link to={`/detalle/${items.id}`}>
+                        <button className='btn btn-primary'>Ver Detalle</button>
                     </Link>
-                    <br /><br /><br />
                 </div>
             </div>
         </div>

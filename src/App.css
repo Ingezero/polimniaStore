@@ -1,30 +1,17 @@
 
 
 .App-header {
-  background: linear-gradient(180deg, #fca49a 0%, #aaeaf5 10%, #aaeaf5 90%, #fca49a 100%);
+  background: #1f1c32;
   display: flex;
   flex-direction:column;
   align-items: center;
-/*     justify-content: center; */
-  color: white;
+  color: rgb(0, 0, 0);
+  height: 20000px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.placeholderText{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
-head{
-  background: #fca49a;
-  height: 100px;
-}
 
-.countColor{
-  color: black;
-}

@@ -1,8 +1,9 @@
 /* import NavLink from "../NavLink/NavLink"; */
-import CartWidget from "../NavBar/CartWidget";
+import CartWidget from "./CartWidget";
 import "./navbar.css"
 import React from "react";
 import { Link } from "react-router-dom";
+
 
 function NavBar() {
 
@@ -10,14 +11,23 @@ function NavBar() {
         <nav className="navStyling">
             <ul>
                 <li>
-                    <Link to="/">Inicio</Link>
+                    <Link className="linkStyling" to="/">Inicio</Link>
                 </li>
                 <li>
-                    <Link to="/Contact">Contacto</Link>
+                    <Link className="linkStyling" to="/categoria/postres">Postres</Link>
+                </li>
+                <li>
+                    <Link className="linkStyling" to="/categoria/pasteles">Pasteles</Link>
+                </li>
+                <li>
+                    <Link className="linkStyling" to="/categoria/galletas">Galletas</Link>
+                </li>
+                <li>
+                    <Link className="linkStyling" to="/contact">Contacto</Link>
                 </li>
                 <CartWidget />
             </ul>
-            <h2 className="headerStyles">Tienda Polimnia Reposteria</h2>
+            <img className="logoSize" src="../img/mainLogo1.jpg" alt="logoPolimniaError" />
         </nav>
     )
 }
