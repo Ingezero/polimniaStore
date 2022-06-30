@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { polimniaProducts } from "../mock/products";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "../itemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { polimniaProducts } from "../mock/products";
-import ItemList from "./ItemList";
+import ItemList from "../itemList/ItemList";
 import { useParams } from "react-router-dom";
 
 export default function ItemListContainer(props) {

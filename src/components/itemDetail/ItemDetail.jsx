@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from '../itemListContainer/ItemCount'
+import ItemCount from '../itemCount/ItemCount'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,10 @@ export default function ItemDetail({ detalles }) {
                 <span>$ {detalles.price}</span>
                 
                 {isAddedToCart
-                    ? <Link to="/cart">Ver Carrito</Link>
+                    ?   <div> 
+                            <br />
+                            <Link to="/cart">Ver Carrito</Link>
+                        </div>
                     : <ItemCount onAdd={handdleOnAdd} stock={detalles.stock} initial={1} />
                 }
                 

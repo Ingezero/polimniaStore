@@ -24,6 +24,7 @@ export default function ItemCount({stock, initial, onAdd}) {
                 <span className="countColor">{count}</span>
                 <button onClick={sumProd}>+</button>
             </span>
+            <br />
             <button onClick={onAdd} className="butSubSize">Terminar Compra</button>
         </div>
     )
